@@ -9,23 +9,23 @@ PowerShell Tool to mainpulate windows security and kerberos abuse. This tool is 
   * [Table of Contents](#table-of-contents)
   * [Command Line Usage](#CommandLineUsage)
     + [ts](#ts)
-      - [sessions](#ts-sessions)
-      - [remote](#ts-remote)
+      - [sessions](#sessions)
+      - [remote](#remote)
     + [token](#token)
-      - [whoami](#token-whoami)
-      - [list](#token-list)
-      - [elevate](#token-elevate)
-      - [revert](#token-revert)
-      - [cmd](#token-cmd)
+      - [whoami](#whoami)
+      - [list](#list)
+      - [elevate](#elevate)
+      - [revert](#revert)
+      - [cmd](#cmd)
     + [Privilege](#privilege)
     + [lsadump](#lsadump)
-      - [sam](#lsadump-sam)
-      - [ntds](#lsadump-ntds)
+      - [sam](#sam)
+      - [ntds](#ntds)
     + [kerberos](#kerberos)
-      - [list](#kerberos-list)
-      - [ptt](#kerberos-ptt)
-      - [purge](#kerberos-purge)
-      - [klist](#kerberos-klist)
+      - [list](#list)
+      - [ptt](#ptt)
+      - [purge](#purge)
+      - [klist](#klist)
     + [help](#help)
   * [Author Information](#author)
      
@@ -187,7 +187,9 @@ Sid: S-1-5-21-2285584810-4222754310-1381224282-500
 
 ### cmd
 Lets you run cmd with your elevated token(if it has permission to do that).
-
+```
+WolfCrack # token::cmd
+```
 ![alt text](./images/token-cmd.png)
 
 ## Privilege
