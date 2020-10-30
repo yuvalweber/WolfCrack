@@ -27,7 +27,7 @@ PowerShell Tool to mainpulate windows security and kerberos abuse. This tool is 
       - [purge](#purge)
       - [klist](#klist)
     + [help](#help)
-  * [Author Information](#author)
+  * [Author Information](#author-information)
      
 # Command Line Usage
 ```
