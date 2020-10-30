@@ -22,7 +22,7 @@ PowerShell Tool to mainpulate windows security and kerberos abuse. This tool is 
       - [sam](#sam)
       - [ntds](#ntds)
     + [kerberos](#kerberos)
-      - [list](#list)
+      - [list](#list-1)
       - [ptt](#ptt)
       - [purge](#purge)
       - [klist](#klist)
