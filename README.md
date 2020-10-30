@@ -360,7 +360,7 @@ WolfCrack # kerberos::list /export
 ```
 ![alt text](./images/exported-tickets.png)
 
-The tickets name is in the following format: <username>@<service>-<domain name>.kirbi
+The tickets name is in the following format: username@service-domainName.kirbi
   
 ### ptt
 This feature lets you take a kirbi file (ticket file) and inject it to your own session.
