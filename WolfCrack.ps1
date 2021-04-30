@@ -1840,7 +1840,7 @@ WolfCrack # kerberos::klist
 #Shows helpful information about using the software
 Function help($option)
 {
-    $options = "Modules are:`n1.privilege`n2.ts`n3.token`n4.lsadump`n5.exit`nIn order to see help about each of them write help::<ModuleName>"
+    $options = "Modules are:`n1.privilege`n2.ts`n3.token`n4.lsadump`n5.kerberos`n6.exit`nIn order to see help about each of them write help::<ModuleName>"
     switch($option)
     {
         "privilege"    {Get-Help Privilege -Full}
