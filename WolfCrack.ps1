@@ -913,7 +913,7 @@ wolfCrack # lsadump::ntds /ntds:"c:\users\ntds.dit" /system:"c:\users\system.hiv
             $err = [lsadump.ntds]::JetAttachDatabase($sesId,$fname,[Microsoft.Isam.Esent.Interop.AttachDatabaseGrbit]::ReadOnly)
             if($err -eq [Microsoft.Isam.Esent.Interop.JET_wrn]::Success)
             {
-                $err = [lsadump.ntds]::JetOpenDatabase($sesId,$fname,$wsConnect,[ref]$dbId,[Microsoft.Isam.Esent.Interop.AttachDatabaseGrbit]::ReadOnly)
+                $err = [lsadump.ntds]::JetOpenDatabase($sesId,$fname,$wsConnect,[ref]$dbId,[Microsoft.Isam.Esent.Interop.OpenDatabaseGrbit]::ReadOnly)
                 if($err -eq [Microsoft.Isam.Esent.Interop.JET_wrn]::Success){}
                 else{Write-Host "[x] error at JetOpenDatabase()" -ForegroundColor Red}
             }

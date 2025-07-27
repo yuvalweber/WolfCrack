@@ -243,6 +243,12 @@ As you can see now we have the nt hash(also known as ntlm hash) of the **Adminis
 Retrieve the hashes (nt and lm hash) of the users saved on the current ntds.dit file. (works with every windows server version)
 ##### Arguments:
 1) ntds (path to the ntds.dit file) \[**required**\]  
+if you don't have one get one like this:
+```powershell
+vssadmin create shadow /for=c:
+# find the name of the shadow copy
+copy.exe <shadow_copy_path>\windows\ntds.dit c:\users\ntds.dit
+```
 2) system (path to the system hive file of the server the ntds.dit file is from) \[**required**\]   
 in order for this to work you need to get the files like that:  
 1) the ntds.dit file, get however you want, but if it is damaged, you will need to repair it with the following command ``` esentutl /p <path_to_ntds_file> ```  
